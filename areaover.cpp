@@ -17,7 +17,7 @@ float area(int a,int b,int c)
 int main()
 {
     int l,b,r,a,c,ch;
-    cout<<"Enter Choice:\n1.Rectangle\n2.Circle\n3.Trianflge\n\n";
+    cout<<"Enter Choice:\n1.Rectangle\n2.Circle\n3.Triangle\n\n";
     cin>>ch;
     switch(ch)
     {
