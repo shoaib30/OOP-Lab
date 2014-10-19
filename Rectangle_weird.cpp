@@ -11,7 +11,7 @@ public:
     }
     friend ostream &operator <<(ostream &dout,rectangle &r)
     {
-        dout<<"Lenght :"<<r.l<<endl;
+        dout<<"Length :"<<r.l<<endl;
         dout<<"Breath :"<<r.b<<endl;
     }
     void operator -()
