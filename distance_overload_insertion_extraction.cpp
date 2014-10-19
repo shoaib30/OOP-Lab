@@ -4,10 +4,6 @@ class dist
 {
     int feet,inch;
 public:
-    void display()
-    {
-        cout<<"Distance : "<<feet<<"'"<<inch<<"\"";
-    }
     friend istream &operator >>(istream &din,dist &d1)
     {
         din>>d1.feet;
