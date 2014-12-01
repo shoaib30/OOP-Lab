@@ -168,22 +168,10 @@ class link_list
         root=NULL;
         nodes=0;
     }
-    void menu()
+    void menu(int ch)
     {
-        int ch,n=1,pos;
+        int n=1,pos;
         t x;
-        cout<<"\n\nEnter choice";
-        cout<<"\n1.Insert Front"<<endl;
-        cout<<"2.Insert Rear"<<endl;
-        cout<<"3.Delete Front"<<endl;
-        cout<<"4.Delete Rear"<<endl;
-        cout<<"5.Display"<<endl;
-        cout<<"6.Search"<<endl;
-        cout<<"7.Insert at position"<<endl;
-        cout<<"8.Delete at position"<<endl;
-        cout<<"9.Delete all instances of"<<endl;
-        cout<<"10.Exit"<<endl;
-        cin>>ch;
         switch(ch)
         {
         case 1:
@@ -254,11 +242,24 @@ class link_list
 int main()
 {
     link_list<char> l;
+    int ch;
     try
     {
         while(1)
         {
-            l.menu();
+            cout<<"\n\nEnter choice";
+            cout<<"\n1.Insert Front"<<endl;
+            cout<<"2.Insert Rear"<<endl;
+            cout<<"3.Delete Front"<<endl;
+            cout<<"4.Delete Rear"<<endl;
+            cout<<"5.Display"<<endl;
+            cout<<"6.Search"<<endl;
+            cout<<"7.Insert at position"<<endl;
+            cout<<"8.Delete at position"<<endl;
+            cout<<"9.Delete all instances of"<<endl;
+            cout<<"10.Exit"<<endl;
+            cin>>ch;
+            l.menu(ch);
         }
     }
     catch(int a)
